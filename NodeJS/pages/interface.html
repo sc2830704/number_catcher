@@ -1,0 +1,567 @@
+ <html>
+   <head>    
+    
+    <style>
+	
+	body {	
+		text-align:center;  
+    padding: 2%;
+    background-color: wheat;
+ }
+  .content{  
+    background-color: burlywood;
+    padding: 2%;
+    box-shadow: 0 0 15px burlywood;
+    
+  }
+	strong{
+    font-size: 4rem;
+    text-align: center;
+    margin: 0 25% 1rem;
+    font-family: 'Special Elite', monospace;
+	}
+	.rfont
+	{
+		font-size:20px;
+		color:red;
+	}
+	.itme{
+	 	margin-top:100px;
+	 	margin-left:500px;
+	}
+	#reference{
+		text-align:left;
+	  margin-left:200px;
+	  margin-right:200px;
+	  margin-bottom:50px;
+	  margin-top:300px;
+	 	border-style:solid;
+	 	border-width:3px;
+	 	padding-top:1px;
+	 	padding-bottom:1%;
+	 	
+	}
+	.f20{
+  font-family: 'Special Elite', monospace;
+	font-size:20px;
+	}
+  a{
+    margin-left:10px;
+} 
+	
+.android {
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  
+  width: 160px;
+  height: 125px;
+  
+  box-shadow: 0 12px 30px -25px rgba(0,0,0,.8);
+  
+  -webkit-transform: scale(1.4);
+  transform: scale(1.4);
+}
+
+.head,
+.head:after,
+.head:before,
+.body,
+.arm,
+.leg {
+  position: absolute;
+  background-color: rgb(163,201,56);
+}
+
+.head:after,
+.head:before {
+  content: "";  
+  display: block;
+}
+
+.head {
+  left: 50%;
+  top: 5px;
+  margin-left: -35px;
+  
+  width: 70px;
+  height: 30px;
+  
+  border-radius: 80px 80px 0 0;
+  
+  -webkit-animation: head 3s infinite;
+  animation: head 3s infinite;
+}
+
+.head:after {  
+  top: -6px;
+  left: 16px;  
+  
+  width: 2px;
+  height: 8px;
+  
+  border-radius: 2px;
+  
+  -webkit-transform: rotate(-30deg) translateZ(0);
+  transform: rotate(-30deg) translateZ(0);
+}
+
+.head:before { 
+  top: -6px;
+  left: 52px;
+  
+  width: 2px;
+  height: 8px;
+  
+  border-radius: 2px;
+  
+  -webkit-transform: rotate(30deg) translateZ(0);
+  transform: rotate(30deg) translateZ(0);
+}
+
+.eye {
+  position: absolute;
+  top: 12px;
+  left: 20px;
+  
+  width: 6px;
+  height: 6px;
+  
+  background-color: #fff;
+  border-radius: 100%;
+}
+
+.eye:last-of-type {
+  left: 45px;
+}
+
+.body {
+  top: 37px;
+  left: 50%;
+  margin-left: -35px;
+  
+  width: 70px;
+  height: 58px;
+  
+  border-radius: 0 0 10px 10px;
+}
+
+.arm {
+  left: -17px;
+  
+  width: 14px;
+  height: 45px;
+
+  border-radius: 8px;
+  -webkit-animation: arm 3s infinite;
+  animation: arm 3s infinite;
+}
+
+.arm:nth-of-type(2) {
+  left: 73px;
+  -webkit-animation: arm-two 3s infinite;
+  animation: arm-two 3s infinite;
+}
+
+.leg {
+  top: 58px;
+  left: 15px;
+  
+  width: 14px;
+  height: 22px;
+  
+  border-radius: 0 0 6px 6px;
+}
+
+.leg:nth-of-type(4) {
+  left: 40px;
+}
+@-webkit-keyframes head {
+  5% {
+    top: 5px;
+    -webkit-transform: rotate(0) translateZ(0);
+    transform: rotate(0) translateZ(0);
+  }
+  
+  10% {
+    top: 0px;
+    -webkit-transform: rotate(10deg) translateZ(0);
+    transform: rotate(10deg) translateZ(0);
+  }
+  
+  15% {
+    top: 5px;
+    -webkit-transform: rotate(0) translateZ(0);
+    transform: rotate(0) translateZ(0);
+  }
+  
+  20% {
+    top: 0px;
+    -webkit-transform: rotate(-10deg) translateZ(0);
+    transform: rotate(-10deg) translateZ(0);
+  }
+  
+  25% {
+    top: 5px;
+    -webkit-transform: rotate(0) translateZ(0);
+    transform: rotate(0) translateZ(0);
+  }
+  
+  30% {
+    top: 0px;
+  }
+  
+  35% {
+    top: 5px;
+  }
+}
+
+@-moz-keyframes head {
+  5% {
+    top: 5px;
+    -webkit-transform: rotate(0) translateZ(0);
+    transform: rotate(0) translateZ(0);
+  }
+  
+  10% {
+    top: 0px;
+    -webkit-transform: rotate(10deg) translateZ(0);
+    transform: rotate(10deg) translateZ(0);
+  }
+  
+  15% {
+    top: 5px;
+    -webkit-transform: rotate(0) translateZ(0);
+    transform: rotate(0) translateZ(0);
+  }
+  
+  20% {
+    top: 0px;
+    -webkit-transform: rotate(-10deg) translateZ(0);
+    transform: rotate(-10deg) translateZ(0);
+  }
+  
+  25% {
+    top: 5px;
+    -webkit-transform: rotate(0) translateZ(0);
+    transform: rotate(0) translateZ(0);
+  }
+  
+  30% {
+    top: 0px;
+  }
+  
+  35% {
+    top: 5px;
+  }
+}
+
+@keyframes head {
+  5% {
+    top: 5px;
+    -webkit-transform: rotate(0) translateZ(0);
+    transform: rotate(0) translateZ(0);
+  }
+  
+  10% {
+    top: 0px;
+    -webkit-transform: rotate(10deg) translateZ(0);
+    transform: rotate(10deg) translateZ(0);
+  }
+  
+  15% {
+    top: 5px;
+    -webkit-transform: rotate(0) translateZ(0);
+    transform: rotate(0) translateZ(0);
+  }
+  
+  20% {
+    top: 0px;
+    -webkit-transform: rotate(-10deg) translateZ(0);
+    transform: rotate(-10deg) translateZ(0);
+  }
+  
+  25% {
+    top: 5px;
+    -webkit-transform: rotate(0) translateZ(0);
+    transform: rotate(0) translateZ(0);
+  }
+  
+  30% {
+    top: 0px;
+  }
+  
+  35% {
+    top: 5px;
+  }
+}
+
+
+@-webkit-keyframes arm {
+  10% {
+    -webkit-transform: rotate(10deg) translateZ(0);
+    transform: rotate(10deg) translateZ(0);
+  }
+  
+  20% {
+    -webkit-transform: rotate(0deg) translateZ(0);
+    transform: rotate(0deg) translateZ(0);
+  }
+  
+  30% {
+    -webkit-transform: rotate(10deg) translateZ(0);
+    transform: rotate(10deg) translateZ(0);
+  }
+  
+  40% {
+    -webkit-transform: rotate(0deg) translateZ(0);
+    transform: rotate(0deg) translateZ(0);
+  }
+}
+
+@-moz-keyframes arm {
+  10% {
+    -webkit-transform: rotate(10deg) translateZ(0);
+    transform: rotate(10deg) translateZ(0);
+  }
+  
+  20% {
+    -webkit-transform: rotate(0deg) translateZ(0);
+    transform: rotate(0deg) translateZ(0);
+  }
+  
+  30% {
+    -webkit-transform: rotate(10deg) translateZ(0);
+    transform: rotate(10deg) translateZ(0);
+  }
+  
+  40% {
+    -webkit-transform: rotate(0deg) translateZ(0);
+    transform: rotate(0deg) translateZ(0);
+  }
+}
+
+@keyframes arm {
+  10% {
+    -webkit-transform: rotate(10deg) translateZ(0);
+    transform: rotate(10deg) translateZ(0);
+  }
+  
+  20% {
+    -webkit-transform: rotate(0deg) translateZ(0);
+    transform: rotate(0deg) translateZ(0);
+  }
+  
+  30% {
+    -webkit-transform: rotate(10deg) translateZ(0);
+    transform: rotate(10deg) translateZ(0);
+  }
+  
+  40% {
+    -webkit-transform: rotate(0deg) translateZ(0);
+    transform: rotate(0deg) translateZ(0);
+  }
+}
+
+@-webkit-keyframes arm-two {
+  10% {
+    -webkit-transform: rotate(-10deg) translateZ(0);
+    transform: rotate(-10deg) translateZ(0);
+  }
+  
+  20% {
+    -webkit-transform: rotate(0deg) translateZ(0);
+    transform: rotate(0deg) translateZ(0);
+  }
+  
+  30% {
+    -webkit-transform: rotate(-10deg) translateZ(0);
+    transform: rotate(-10deg) translateZ(0);
+  }
+  
+  40% {
+    -webkit-transform: rotate(0deg) translateZ(0);
+    transform: rotate(0deg) translateZ(0);
+  }
+}
+
+@-moz-keyframes arm-two {
+  10% {
+    -webkit-transform: rotate(-10deg) translateZ(0);
+    transform: rotate(-10deg) translateZ(0);
+  }
+  
+  20% {
+    -webkit-transform: rotate(0deg) translateZ(0);
+    transform: rotate(0deg) translateZ(0);
+  }
+  
+  30% {
+    -webkit-transform: rotate(-10deg) translateZ(0);
+    transform: rotate(-10deg) translateZ(0);
+  }
+  
+  40% {
+    -webkit-transform: rotate(0deg) translateZ(0);
+    transform: rotate(0deg) translateZ(0);
+  }
+}
+
+@keyframes arm-two {
+  10% {
+    -webkit-transform: rotate(-10deg) translateZ(0);
+    transform: rotate(-10deg) translateZ(0);
+  }
+  
+  20% {
+    -webkit-transform: rotate(0deg) translateZ(0);
+    transform: rotate(0deg) translateZ(0);
+  }
+  
+  30% {
+    -webkit-transform: rotate(-10deg) translateZ(0);
+    transform: rotate(-10deg) translateZ(0);
+  }
+  
+  40% {
+    -webkit-transform: rotate(0deg) translateZ(0);
+    transform: rotate(0deg) translateZ(0);
+  }
+}
+
+
+/* -------------- */
+
+#sobre {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;  
+  width: 300px;
+  
+  color: rgba(0,0,0,.4);
+  text-align: center;
+  
+  padding: 20px;
+  
+  background-color: rgba(0,0,0,.06);
+  border-radius: 10px;
+}
+
+#sobre h1 {
+  font-size: 2.6em;
+  margin: 0;
+}
+
+#sobre p {
+  font-size: 1.3em;
+  line-height: 22px;
+  margin: 10px 0;
+}
+
+#sobre small {
+  font-size: 1.2em;
+}
+
+#sobre a {
+  color: rgba(0,0,0,.4);
+}
+    </style>
+	<script src="/socket.io/socket.io.js"></script>
+    <script>
+	var totalNumber="0";
+	var waitPeople = 0;
+	  function setAndroidtotalNumber(s){
+//alert(totalNumber);
+	window.Android.setAndroidtotalNumber_calledWebJava(totalNumber);
+	window.Android.setAndroidwaitNumber_calledWebJava(waitPeople);
+	}
+	
+	var iosocket;
+	var client;
+	var btn;
+	var waittingNumber;
+	//var onOff = false; 
+	
+	function initSocketIO()
+	{
+		iosocket = io.connect();
+		iosocket.on('onconnection', function(receivedData) {
+		client = document.getElementById("waitNumber");//prompt到html上顯示
+		client.innerHTML = receivedData.nfc;		
+		totalNumber=receivedData.nfc;
+		btn = document.getElementById("currentNumber");//prompt到html上顯示
+		btn.innerHTML = receivedData.button;
+		waitPeople = Number(receivedData.nfc) - Number(receivedData.button);		
+		nfcCount();   //處理來自Server對nfc的Socket要求
+		clickCount(); //處理來自Server對button的Socket要求
+	    });
+	}
+	function nfcCount()
+	{
+			iosocket.on('updateData', function (receivedData) { //由socket取得server端的data			
+			client.innerHTML = receivedData;
+			waittingNumber=receivedData;
+			});
+	}
+	function clickCount()
+	{
+			
+			iosocket.on('btnClick',function(receivedData){
+			count=receivedData;
+			    btn.innerHTML = count;
+			
+			});
+	}
+	  
+
+	window.onload = function() {
+	     initSocketIO();
+        };
+	
+    </script>
+  </head>
+  <body>
+  
+	     
+      
+    <div class=content>
+      
+    
+	      <strong>Draw Card System</strong>
+      <div class="android">
+      <div class="head">
+        <div class="eye"></div>
+        <div class="eye"></div>
+      </div>
+  
+      <div class="body">
+        <div class="arm"></div>
+        <div class="arm"></div>
+    
+        <div class="leg"></div>
+        <div class="leg"></div>
+      </div>
+     </div>
+	      <h1>號碼總數:<span id="waitNumber"> 15</span></h1>
+	      <h1>當前號碼:<span id="currentNumber">9</span></h1>
+      
+      
+      <div class=rfont>copyRight NTUST</div>
+      
+      <b class=f20>
+        
+      <div id=reference color=blue>
+        <a>參考資料<br></a>
+        <a href=http://www.barryvandam.com/node-js-communicating-with-arduino/>Nodejs Communicating with Arduino</a><br>
+  	      <a href=http://www.1keydata.com/css-tutorial/tw/div-span.php>CSS語法</a><br>
+        <a href=http://codepen.io/pen>CodePen</a>
+        </b>
+      </div>
+    </div>
+    
+  </body>
+  
+  
+
+  
+</html>

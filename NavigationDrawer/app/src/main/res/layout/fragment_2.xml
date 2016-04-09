@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:weightSum="1">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="總共人數"
+        android:id="@+id/totalNumber"
+        android:layout_marginTop="10dp"/>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="載入郵局資料"
+        android:id="@+id/load_button"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/data_button"
+        android:layout_toStartOf="@+id/data_button" />
+
+    <ImageView
+        android:layout_width="55dp"
+        android:layout_height="59dp"
+        android:id="@+id/postofficeView"
+
+        android:adjustViewBounds="true"
+        android:maxWidth="200dp"
+        android:maxHeight="200dp"
+        android:src="@drawable/postoffice"
+        android:layout_gravity="center_horizontal"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="等候人數:"
+        android:id="@+id/waitNumber"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"/>
+
+
+    <ImageButton
+        android:layout_width="62dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/mapButton"
+        android:layout_weight="0.12"/>
+
+    <WebView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/webView"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:visibility="invisible"/>
+
+</LinearLayout>

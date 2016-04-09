@@ -1,0 +1,6 @@
+NumberCatcher Project中
+用來控制櫃檯按鈕的arduino程式碼
+每當按鈕按下，SerialPort傳送一組訊號給PC的NodeJS伺服器
+Function:
+serialSend(String string)
+傳送"BstringE"的指令給SerialPort
